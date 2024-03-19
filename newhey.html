@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    </header>
+    
+    <body class="bg-gray-900 text-white">
+        <div class="absolute inset-0 flex justify-center items-center z-10" id="gameoverscreen">
+            <div class="text-9xl font-bold hover:tracking-[60px] transition-all duration-300 ease-in-out animate-pulse select-none">GAME OVER</div>
+        </div>
+            <div class="flex flex-col items-center mb-20 z-0">
+            <button class="text-green-300 h-24 text-3xl" id="qbtn">Q!</button>        
+            <div class="flex justify-center space-x-10">
+                <div id="me">
+                    <div class="flex flex-col items-center">
+                        <div class="h-24"></div>
+                        <div class="grid grid-rows-6 grid-cols-5 gap-4 place-content-center h-auto border-solid border-red-100">
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="repeat(30, minmax(0, 1fr)) border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                        </div>    
+                        <div class="flex flex-wrap justify-center mt-6 grid grid-cols-10 gap-3">
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">Q</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">W</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">E</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">R</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">T</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">Y</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">U</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">I</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">O</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">P</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">A</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">S</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">D</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">F</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">G</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">H</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">J</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">K</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">L</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">Z</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">X</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">C</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">V</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">B</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">N</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">M</kbd>
+                        </div>
+                    </div>
+                </div>
+                <div id="enem">
+                    <div class="flex flex-col items-center">
+                        <div class="text-green-300 h-24" id="qbtn2"></div>
+                        <div class="grid grid-rows-6 grid-cols-5 gap-4 place-content-center h-auto border-solid border-red-100">
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                            <div class="repeat(30, minmax(0, 1fr)) border border-red-500 w-12 h-12 flex justify-center items-center"></div>
+                        </div>
+                        <div class="flex flex-wrap justify-center mt-6 grid grid-cols-10 gap-3" id="enemkd">
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">Q</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">W</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">E</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">R</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">T</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">Y</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">U</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">I</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">O</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">P</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">A</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">S</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">D</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">F</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">G</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">H</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">J</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">K</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">L</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">Z</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">X</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">C</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">V</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">B</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">N</kbd>
+                            <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">M</kbd>
+                        </div>
+                    </div>     
+                </div>
+            </div>   
+        </div>
+    </div>
+</body>
